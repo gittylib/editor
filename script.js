@@ -133,7 +133,7 @@ function getCode(){
 
 var $temp = $("<input>");
   $("body").append($temp);
-  +$temp.val('<link rel="stylesheet" href="style.css">'+code).select();
+  +$temp.val('<link rel="stylesheet" href="https://raw.githubusercontent.com/gittylib/editor/master/gittylib.css">'+code).select();
   document.execCommand("copy");
   $temp.remove();
   alert("Copied");
